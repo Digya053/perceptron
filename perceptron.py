@@ -71,5 +71,5 @@ if __name__ == "__main__":
     data = df.iloc[:, 0:3].as_matrix()
     y = df['y'].values
 
-    p = Perceptron(data, y, df)
+    p = Perceptron(data, y, df, out_file)
     p.train()
